@@ -49,7 +49,7 @@ fun main() {
                     .fillMaxHeight()
                     .requiredWidth(width.value.dp)
                     .align(Alignment.CenterEnd)
-                    .offset { IntOffset(if (enabled.value) 0 else width.value, 0) },
+                    .offset { IntOffset(if (enabled.value) 0 else width.value.dp.roundToPx(), 0) },
                 color = Color.Cyan.copy(alpha = 0.5f)
             ) {
 
